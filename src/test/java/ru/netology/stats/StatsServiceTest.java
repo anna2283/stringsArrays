@@ -1,11 +1,13 @@
 package ru.netology.stats;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.util.concurrent.atomic.AtomicReference;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StatsServiceTest {
-
     @Test
     void statisticSaleSum() {
         StatsService service = new StatsService();
@@ -88,4 +90,3 @@ public class StatsServiceTest {
         assertEquals(expected, actual);
     }
 }
-

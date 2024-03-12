@@ -1,3 +1,5 @@
+
+
 package ru.netology.stats;
 
 
@@ -40,7 +42,7 @@ public class StatsService {
     }
 
     public int statisticMonthUnderAverage(int[] sale) {
-        long averageSum = (int) statisticSaleAverageMonth(sale);
+        long averageSum = (long) statisticSaleAverageMonth(sale);
         int numberUnderAverage = 0;
 
         // Запускаем цикл от 0 до длины массива sale
@@ -54,7 +56,7 @@ public class StatsService {
     }
 
     public int statisticMonthOverAverage(int[] sale) {
-        int averageSum = (int) statisticSaleAverageMonth(sale);
+        long averageSum = (long) statisticSaleAverageMonth(sale);
         int numberOverAverage = 0;
 
         // Запускаем цикл от 0 до длины массива sale
@@ -68,5 +70,8 @@ public class StatsService {
     }
 
 }
+
+
+
 
 
